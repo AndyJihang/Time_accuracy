@@ -1,4 +1,4 @@
-setwd("/Users/hebotao/Desktop/Time_accuracy")
+setwd("/Users/Jihang/Desktop/Time_accuracy")
 ### Windows
 #install.packages(c("callr", "fs", "processx"))
 #install.packages("devtools")
@@ -22,7 +22,7 @@ library(dplyr)
 library(mirt)
 library(shinystan)
 
-load("/Users/hebotao/Desktop/Time_accuracy/speed_accuracy_new.Rdata")
+load("/Users/Jihang/Desktop/Time_accuracy/speed_accuracy_new.Rdata")
 speed_accuracy_new <- speed_accuracy_new[1:200,]
 x<-log(as.numeric(as.character(speed_accuracy_new[,2]))/1000)
 hist(x, breaks=100,prob=F, xlab="Log time", main="Log response time distribution")
